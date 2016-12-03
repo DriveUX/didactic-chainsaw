@@ -1,0 +1,258 @@
+@import "normalize.css";
+@import "webflow.css";
+@import "pakpod.webflow.css";
+@import "youtube.css";
+
+.hero-section.centered {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.w-container, .hero-section {
+  padding: 0 2rem;
+  max-width: 1600px;
+}
+
+.feature-heading {
+  font-size: 34px;
+}
+
+.closing {
+  background: url("../images/fish-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  background-position: 50% 50%;
+}
+
+.closing > div {
+  width: 1200px;
+}
+
+.closing h1, .closing p {
+  color: white;
+}
+
+.closing h1 {
+  opacity: .8;
+}
+.specs {
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  background: #1a1a1a url("../images/Specs.jpg") no-repeat;
+  background-position: right top;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.specs img {
+  opacity: .9;
+  position: relative;
+  top: -3rem
+}
+
+.datagrid table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+}
+.datagrid table td {
+  padding: 16px;
+}
+.datagrid table tbody td {
+  color: #8c8c8c;
+  border-left: 1px solid #90d146;
+  font-size: 16px;
+  font-weight: normal;
+}
+.datagrid table tbody .alt {
+  color: #212020;
+  background: green;
+}
+.datagrid table tbody td:first-child {
+  border-left: none;
+}
+.datagrid table tbody tsr:last-child td {
+  border-bottom: none;
+}
+.datagrid tr {
+  background: rgba(34, 33, 33, 0.8);
+  border-bottom: 4px solid #1a1a1a;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 2rem;
+}
+.closing .button {
+  margin-top: 60px;
+}
+.white-bg-img {
+  display: block;
+  margin: 0 auto;
+}
+.accolade {
+  max-width: 100%;
+}
+.footer {
+  text-align: left;
+  padding: inherit 0;
+}
+.footer .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer ul {
+  padding: 0;
+  float: left;
+  margin-top: .65rem;
+}
+.footer ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid gray;
+}
+.footer a img {
+  width: 192px;
+  margin-right: 1rem;
+}
+.footer ul li a {
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+  letter-spacing: 1px;
+  font-family: Lato, sans-serif;
+}
+.footer ul li:last-of-type {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.footer ul a:hover {
+  color: #90d146;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: gray;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .closing .section-subheading, .closing .product-text {
+    text-align: center;
+  }
+  .closing .button {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .w-col-4 {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .wildcol {
+    width: 100%;
+  }
+  .youtube-player {
+    height: auto;
+  }
+  .section.product-one {
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer a img {
+    margin-right: 0;
+  }
+  .footer .flex {
+    flex-direction: column;
+  }
+  .footer .flex ul {
+    margin-top: 1rem;
+  }
+  .product-one {
+    display: flex;
+    flex-flow: column;
+  }
+  .product-one .flex-row {
+    flex-direction: column;
+  }
+  .section-subheading, .product-text {
+    text-align: center;
+  }
+  .product-one .section-subheading {
+    margin-top: 2rem;
+  }
+  .product-one .button {
+    float: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .w-col-4 {
+    width: 100%;
+  }
+  .features .round-img {
+    width: 150px;
+  }
+  .w-container {
+    padding: 0 1rem;
+  }
+
+}
+@media screen and (max-width: 640px) {
+  .footer .flex ul {
+    width: 100%;
+  }
+  .footer .flex ul li {
+    width: 50%;
+    border-right: 0;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .specs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .specs {
+    padding: .25rem;
+  }
+  .datagrid {
+    width: 100%;
+  }
+  .datagrid table tbody td:first-of-type {
+    border-bottom: 1px solid #90d146;
+  }
+  .datagrid table tbody td {
+    border-left: 0;
+  }
+  .datagrid td {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
