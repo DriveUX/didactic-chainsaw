@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
 }
-.w-container, .hero-section {
+.w-container {
   padding: 0 2rem;
   max-width: 1600px;
 }
@@ -29,8 +29,8 @@
   background-position: 50% 50%;
 }
 
-.closing > div {
-  width: 1200px;
+.closing > div, .specs > div, .accolade {
+  width: 1600px;
 }
 
 .closing h1, .closing p {
@@ -39,6 +39,10 @@
 
 .closing h1 {
   opacity: .8;
+}
+
+.features .section-buttons {
+  padding-top: 8rem;
 }
 .specs {
   padding: 3rem 2rem;
@@ -194,14 +198,17 @@
   .product-one .flex-row {
     flex-direction: column;
   }
-  .section-subheading, .product-text {
+  .section-subheading, .product-text, .hero-subheading, .hero-heading, .hero-section {
     text-align: center;
   }
   .product-one .section-subheading {
     margin-top: 2rem;
   }
-  .product-one .button {
+  .product-one .button, .hero-section .button {
     float: none;
+  }
+  .button:last-of-type {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 640px) {
@@ -214,9 +221,9 @@
   .w-container {
     padding: 0 1rem;
   }
-
-}
-@media screen and (max-width: 640px) {
+  .features .row-marg-bottom {
+    margin-bottom: 0;
+  }
   .footer .flex ul {
     width: 100%;
   }
